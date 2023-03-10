@@ -62,4 +62,17 @@ public class CustomListTest {
         list.deleteCity(city);
         assertEquals(list.getCount(), 0);
     }
+
+    /**
+     * add a city to the list
+     * call count method
+     * check if the count returns correctly
+     */
+    @Test
+    public void countCityTest(){
+        list = MockCityList();
+        City city = new City("Estevan", "SK");
+        list.addCity(city);
+        assertEquals(list.countCity(),0);
+    }
 }
